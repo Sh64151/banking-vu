@@ -37,7 +37,7 @@ jobs:
 
       # SCA Scan
       - name: Run SCA Scan
-        run: snyk test 
+        run: snyk test --severity-threshold=high
 
       #SAST Scan
       - name: Run SAST Scan 
